@@ -1,0 +1,28 @@
+public class BitSwaping 
+{
+
+static int bitswap(int num){
+        // Get all even bits of num 
+        int even = num & 0xAAAAAAAA;  
+      
+        // Get all odd bits of num
+        int odd = num & 0x55555555;  
+      
+        // Right shift even bits 
+        even >>= 1;  
+          
+        // Left shift even bits 
+        odd <<= 1;  
+          
+        // Combine and return even and odd bits 
+        return (even | odd);  
+}
+
+public static void main(Sting[] asq){
+
+int num = 47;
+
+System.out.println(bitswap(num));
+
+}
+}
