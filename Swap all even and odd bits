@@ -11,7 +11,7 @@ static int bitswap(int num){
         // Right shift even bits 
         even >>= 1;  
           
-        // Left shift even bits 
+        // Left shift odd bits 
         odd <<= 1;  
           
         // Combine and return even and odd bits 
