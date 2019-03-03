@@ -1,0 +1,32 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Prac {
+    public static void main(String[] awq){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Size of list");
+        int n= sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter values of list");
+        for(int i=0;i<n;i ++ ){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Enter value of k");
+        int k = sc.nextInt();
+        Arrays.sort(arr);
+        int l=0;
+        int r = n-1;
+        while (l<r){
+            if(arr[l]+arr[r]==k) {
+                System.out.println("Pair of " + arr[l] + " and " + arr[r] + " Gives " + k);
+                break;
+            }
+            else if(arr[l]+arr[r]<k)
+                l++;
+            else
+                r--;
+        }
+
+    }
+}
