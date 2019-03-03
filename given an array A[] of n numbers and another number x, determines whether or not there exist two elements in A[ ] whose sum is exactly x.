@@ -13,7 +13,7 @@ public class prac {
         }
         System.out.println("Enter value of k");
         int k = sc.nextInt();
-        List<Integer> s = new ArrayList<>();
+        HashSet<Integer> s = new HashSet<Integer>();
         for (int i = 0; i < n; ++i) {
             int temp = k - arr[i];
 
